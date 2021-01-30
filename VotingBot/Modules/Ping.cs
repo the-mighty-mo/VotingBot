@@ -3,7 +3,7 @@ using Discord.Commands;
 using Discord.Rest;
 using System.Threading.Tasks;
 
-namespace BotBase.Modules
+namespace VotingBot.Modules
 {
     public class Ping : ModuleBase<SocketCommandContext>
     {

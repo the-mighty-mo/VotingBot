@@ -5,7 +5,7 @@ using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace BotBase
+namespace VotingBot
 {
     public static class Program
     {

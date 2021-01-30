@@ -1,7 +1,7 @@
-﻿using BotBase.Databases;
+﻿using VotingBot.Databases;
 using System.Threading.Tasks;
 
-namespace BotBase
+namespace VotingBot
 {
     public static class DatabaseManager
     {

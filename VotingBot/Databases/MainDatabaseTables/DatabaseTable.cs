@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using System.Threading.Tasks;
 
-namespace BotBase.Databases.MainDatabaseTables
+namespace VotingBot.Databases.MainDatabaseTables
 {
     public class DatabaseTable : ITable
     {

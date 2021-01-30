@@ -1,9 +1,9 @@
-﻿using BotBase.Databases.MainDatabaseTables;
+﻿using VotingBot.Databases.MainDatabaseTables;
 using Microsoft.Data.Sqlite;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BotBase.Databases
+namespace VotingBot.Databases
 {
     public class MainDatabase
     {
