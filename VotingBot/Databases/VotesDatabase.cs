@@ -1,20 +1,24 @@
-﻿using VotingBot.Databases.MainDatabaseTables;
+﻿using VotingBot.Databases.VotesDatabaseTables;
 using Microsoft.Data.Sqlite;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace VotingBot.Databases
 {
-    public class MainDatabase
+    public class VotesDatabase
     {
-        private readonly SqliteConnection connection = new SqliteConnection("Filename=Database.db");
+        private readonly SqliteConnection connection = new SqliteConnection("Filename=Votes.db");
         private readonly Dictionary<System.Type, ITable> tables = new Dictionary<System.Type, ITable>();
 
-        public DatabaseTable Database => tables[typeof(DatabaseTable)] as DatabaseTable;
+        public VotesTable Votes => tables[typeof(VotesTable)] as VotesTable;
+        public ReactionsTable Reactions => tables[typeof(ReactionsTable)] as ReactionsTable;
+        public VotersTable Voters => tables[typeof(VotersTable)] as VotersTable;
 
-        public MainDatabase()
+        public VotesDatabase()
         {
-            tables.Add(typeof(DatabaseTable), new DatabaseTable(connection));
+            tables.Add(typeof(VotesTable), new VotesTable(connection));
+            tables.Add(typeof(ReactionsTable), new ReactionsTable(connection));
+            tables.Add(typeof(VotersTable), new VotersTable(connection));
         }
 
         public async Task InitAsync()

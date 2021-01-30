@@ -5,19 +5,19 @@ namespace VotingBot
 {
     public static class DatabaseManager
     {
-        public static readonly MainDatabase database = new MainDatabase();
+        public static readonly VotesDatabase votesDatabase = new VotesDatabase();
 
         public static async Task InitAsync()
         {
             await Task.WhenAll(
-                database.InitAsync()
+                votesDatabase.InitAsync()
             );
         }
 
         public static async Task CloseAsync()
         {
             await Task.WhenAll(
-                database.CloseAsync()
+                votesDatabase.CloseAsync()
             );
         }
     }
