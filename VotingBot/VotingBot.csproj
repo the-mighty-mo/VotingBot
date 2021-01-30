@@ -4,12 +4,12 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <Nullable>warnings</Nullable>
-    <PackageId>Bot Base</PackageId>
+    <PackageId>Voting Bot</PackageId>
     <Authors>Josedolf Staller</Authors>
     <Company>Josedolf Staller Enterprises</Company>
-    <Product>Bot Base</Product>
-    <Description>Base code for all Discord bots</Description>
-    <Copyright>Copyright © The Mighty Mi® 2020</Copyright>
+    <Product>Voting Bot</Product>
+    <Description>Discord bot to manage secure server votes and polls</Description>
+    <Copyright>Copyright © The Mighty Mi® 2021</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
