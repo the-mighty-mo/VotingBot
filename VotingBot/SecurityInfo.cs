@@ -1,6 +1,6 @@
 ﻿using Discord;
 
-namespace BotBase
+namespace VotingBot
 {
     public static class SecurityInfo
     {
