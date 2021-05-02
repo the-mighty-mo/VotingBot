@@ -19,7 +19,7 @@ namespace VotingBot.Modules
                 .WithTitle(SecurityInfo.botName)
                 .WithCurrentTimestamp();
 
-            List<EmbedFieldBuilder> fields = new List<EmbedFieldBuilder>
+            List<EmbedFieldBuilder> fields = new()
             {
                 new EmbedFieldBuilder()
                     .WithIsInline(false)

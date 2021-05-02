@@ -7,8 +7,8 @@ namespace VotingBot.Databases
 {
     public class VotesDatabase
     {
-        private readonly SqliteConnection connection = new SqliteConnection("Filename=Votes.db");
-        private readonly Dictionary<System.Type, ITable> tables = new Dictionary<System.Type, ITable>();
+        private readonly SqliteConnection connection = new("Filename=Votes.db");
+        private readonly Dictionary<System.Type, ITable> tables = new();
 
         public VotesTable Votes => tables[typeof(VotesTable)] as VotesTable;
         public ReactionsTable Reactions => tables[typeof(ReactionsTable)] as ReactionsTable;

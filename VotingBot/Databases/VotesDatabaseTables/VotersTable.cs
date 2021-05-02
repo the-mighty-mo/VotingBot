@@ -11,7 +11,7 @@ namespace VotingBot.Databases.VotesDatabaseTables
 
         public Task InitAsync()
         {
-            using SqliteCommand cmd = new SqliteCommand("CREATE TABLE IF NOT EXISTS Voters (guild_id TEXT PRIMARY KEY, vote_id INTEGER NOT NULL, user_id TEXT NOT NULL, reaction TEXT NOT NULL, UNIQUE(guild_id, vote_id, user_id));", connection);
+            using SqliteCommand cmd = new("CREATE TABLE IF NOT EXISTS Voters (guild_id TEXT PRIMARY KEY, vote_id INTEGER NOT NULL, user_id TEXT NOT NULL, reaction TEXT NOT NULL, UNIQUE(guild_id, vote_id, user_id));", connection);
             return cmd.ExecuteNonQueryAsync();
         }
     }

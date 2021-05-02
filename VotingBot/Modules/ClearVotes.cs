@@ -13,7 +13,7 @@ namespace VotingBot.Modules
         [RequireUserPermission(GuildPermission.Administrator)]
         public async Task ClearVotesAsync()
         {
-            List<Task> cmds = new List<Task>
+            List<Task> cmds = new()
             {
                 votesDatabase.Votes.RemoveVotesAsync(Context.Guild)
             };
