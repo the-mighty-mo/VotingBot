@@ -1,4 +1,4 @@
-VotingBot/bin/
-VotingBot/obj/
+**/bin/
+**/obj/
 .vs/
-*.user
+**.user
